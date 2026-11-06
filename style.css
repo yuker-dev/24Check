@@ -100,9 +100,9 @@ form {
   margin-top: 10px;
 }
 
-.button {
+.resetButton {
   border: solid 2px #92b9bd;
-  margin: 10px;
+  margin: 1.5rem;
   background-color: #031926;
   color: #92b9bd;
   font-size: 1.5rem;
@@ -114,7 +114,7 @@ form {
     color 0.3s ease;
 }
 
-.button:hover {
+.resetButton:hover {
   background-color: #92b9bd;
   color: #031926;
 }
