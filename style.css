@@ -33,18 +33,15 @@ main {
 }
 
 .checklists {
-    display: block;
-    justify-content: space-between;
-}
-.checklistContainer {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
 }
 
 .checklist {
-    margin: 10px;
+  flex: 0 1 250px;
   height: 300px;
-  width: 250px;
   border: #92b9bd solid 3px;
   border-radius: 15%;
 }
