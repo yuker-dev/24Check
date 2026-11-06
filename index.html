@@ -24,8 +24,8 @@
     <main>
       <form>
         <div class="checklists">
-          <div id="before-start" class="checklist">
-            <h3>Before start</h3>
+          <details open class="checklist" class="checklist">
+            <summary>Before start</summary>
             <ul>
               <li>
                 <input type="checkbox" id="ATIS" class="checkBox" />
@@ -40,9 +40,9 @@
                 <label for="Clearance">Request IFR/VFR Clearance</label>
               </li>
             </ul>
-          </div>
-          <div id="startup" class="checklist">
-            <h3>Start-up</h3>
+          </details>
+          <details open class="checklist" class="checklist">
+            <summary>Start-up</summary>
             <ul>
               <li>
                 <input type="checkbox" id="PushStart" class="checkBox" />
@@ -63,9 +63,9 @@
                 >
               </li>
             </ul>
-          </div>
-          <div id="after-startup" class="checklist">
-            <h3>After start</h3>
+          </details>
+          <details open class="checklist">
+            <summary>After start</summary>
             <ul>
               <li>
                 <input type="checkbox" id="EnginesNormal" class="checkBox" />
@@ -78,27 +78,27 @@
                 <label for="FlapsTO">Flaps set to TO position (Flaps 1)</label>
               </li>
             </ul>
-          </div>
-          <div id="beforeTaxi" class="checklist">
-            <h3>Before Taxi</h3>
+          </details>
+          <details open class="checklist" class="checklist">
+            <summary>Before Taxi</summary>
             <ul>
               <li>
                 <input type="checkbox" id="TaxiClearance" class="checkBox" />
                 <label for="TaxiClearance">Request Taxi Clearance</label>
               </li>
             </ul>
-          </div>
-          <div id="taxi" class="checklist">
-            <h3>Taxi</h3>
+          </details>
+          <details open class="checklist">
+            <summary>Taxi</summary>
             <ul>
               <li>
                 <input type="checkbox" id="TaxiInstructions" class="checkBox" />
                 <label for="TaxiInstructions">Follow Taxi instructions</label>
               </li>
             </ul>
-          </div>
-          <div id="afterTaxi" class="checklist">
-            <h3>After Taxi</h3>
+          </details>
+          <details open class="checklist">
+            <summary>After Taxi</summary>
             <ul>
               <li>
                 <input type="checkbox" id="FreqChangeGround" class="checkBox" />
@@ -111,9 +111,9 @@
                 <label for="ContactTower">Monitor/Contact Tower</label>
               </li>
             </ul>
-          </div>
-          <div id="beforeTakeoff" class="checklist">
-            <h3>Before Takeoff</h3>
+          </details>
+          <details open class="checklist">
+            <summary>Before Takeoff</summary>
             <ul>
               <li>
                 <input type="checkbox" id="VerifyFlaps" class="checkBox" />
@@ -130,9 +130,9 @@
                 <label for="TowerClearance">Wait for Tower Clearance</label>
               </li>
             </ul>
-          </div>
-          <div id="takeoff" class="checklist">
-            <h3>Takeoff</h3>
+          </details>
+          <details open class="checklist">
+            <summary>Takeoff</summary>
             <ul>
               <li>
                 <input type="checkbox" id="StabilizeEngines" class="checkBox" />
@@ -143,9 +143,9 @@
                 <label for="TOGA">TO/GA (100% engine thrust)</label>
               </li>
             </ul>
-          </div>
-          <div id="afterTakeoff" class="checklist">
-            <h3>After Takeoff</h3>
+          </details>
+          <details open class="checklist">
+            <summary>After Takeoff</summary>
             <ul>
               <li>
                 <input type="checkbox" id="GearUp" class="checkBox" />
@@ -168,9 +168,9 @@
                 >
               </li>
             </ul>
-          </div>
-          <div id="climbCruise" class="checklist">
-            <h3>Climb/Cruise</h3>
+          </details>
+          <details open class="checklist">
+            <summary>Climb/Cruise</summary>
             <ul>
               <li>
                 <input type="checkbox" id="FollowATC" class="checkBox" />
@@ -183,9 +183,9 @@
                 >
               </li>
             </ul>
-          </div>
-          <div id="beforeLanding" class="checklist">
-            <h3>Before Landing</h3>
+          </details>
+          <details open class="checklist">
+            <summary>Before Landing</summary>
             <ul>
               <li>
                 <input type="checkbox" id="Flaps1Runway" class="checkBox" />
@@ -216,9 +216,9 @@
                 >
               </li>
             </ul>
-          </div>
-          <div id="landing" class="checklist">
-            <h3>Landing</h3>
+          </details>
+          <details open class="checklist">
+            <summary>Landing</summary>
             <ul>
               <li>
                 <input type="checkbox" id="Flare" class="checkBox" />
@@ -231,9 +231,9 @@
                 >
               </li>
             </ul>
-          </div>
-          <div id="afterLanding" class="checklist">
-            <h3>After Landing</h3>
+          </details>
+          <details open class="checklist">
+            <summary>After Landing</summary>
             <ul>
               <li>
                 <input type="checkbox" id="Reverser" class="checkBox" />
@@ -252,9 +252,9 @@
                 <label for="TaxiToGate">Follow ATC instructions to Gate</label>
               </li>
             </ul>
-          </div>
-          <div id="shutdown" class="checklist">
-            <h3>Shutdown</h3>
+          </details>
+          <details open class="checklist">
+            <summary>Shutdown</summary>
             <ul>
               <li>
                 <input type="checkbox" id="EnginesOff" class="checkBox" />
@@ -265,7 +265,7 @@
                 <label for="ThankATC">Thank the ATC</label>
               </li>
             </ul>
-          </div>
+          </details>
         </div>
         <div class="resetbtn">
           <button type="reset" class="resetButton">Reset checklist</button>

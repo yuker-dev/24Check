@@ -6,6 +6,22 @@
   background-color: #031926;
 }
 
+:root {
+  interpolate-size: allow-keywords;
+}
+
+details::details-content {
+  height: 0;
+  overflow: clip;
+  transition:
+    height 0.3s ease,
+    content-visibility 0.3s ease allow-discrete;
+}
+
+details[open]::details-content {
+  height: auto;
+}
+
 header {
   text-align: center;
   margin: 0px;
@@ -52,19 +68,24 @@ form {
   padding: 10px;
 }
 
-.checklist h3 {
+.checklist summary {
+    list-style: none;
   text-align: center;
   margin-top: 10px;
   color: #ffec00;
+  transition: color 0.3s ease-in-out;
 }
 
+.checklist summary:hover {
+    color:#fff7a0;
+}
 .checklist li {
   list-style: none;
   color: #fff;
   margin: 10px;
   transition:
     background-color 0.3s ease,
-    color 0.3s ease;
+    background-color 0.3s ease;
 }
 
 .checklist li :hover {
