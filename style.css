@@ -3,6 +3,7 @@
 * {
   font-family: "Inter", sans-serif;
   margin: 0px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 header {
@@ -53,15 +54,33 @@ main {
 }
 
 .checklist li {
-    list-style: none;
-    color: #fff;
-    margin: 10px;
+  list-style: none;
+  color: #fff;
+  margin: 10px;
 }
 
 .checklist li :hover {
-    color: #ffec00;
+  color: #ffec00;
 }
 
+.button {
+  margin: 10px;
+  border: none;
+  background-color: #031926;
+  color: #92b9bd;
+  font-size: 1.5rem;
+  border-radius: 15px;
+  width: 300px;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #639a88;
+  color: #ffec00;
+}
 
 footer {
   max-height: auto;
@@ -73,4 +92,3 @@ footer {
 footer .text {
   padding: 50px;
 }
-

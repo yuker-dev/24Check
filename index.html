@@ -22,152 +22,255 @@
       </div>
     </header>
     <main>
-      <div class="checklists">
-        <div id="before-start" class="checklist">
-          <h3>Before start</h3>
-          <ul>
-            <li><input type="checkbox" id="ATIS" class="checkbox">
-                <label for="ATIS">ATIS Information acknowledged</label></li>
-            <li><input type="checkbox" id="FPL" class="checkbox">
-                <label for="FPL">Flight Plan filed</label></li>
-            <li><input type="checkbox" id="Clearance" class="checkbox">
-                <label for="Clearance">Request IFR/VFR Clearance</label></li>
-          </ul>
+      <form>
+        <div class="checklists">
+          <div id="before-start" class="checklist">
+            <h3>Before start</h3>
+            <ul>
+              <li>
+                <input type="checkbox" id="ATIS" class="checkbox" />
+                <label for="ATIS">ATIS Information acknowledged</label>
+              </li>
+              <li>
+                <input type="checkbox" id="FPL" class="checkbox" />
+                <label for="FPL">Flight Plan filed</label>
+              </li>
+              <li>
+                <input type="checkbox" id="Clearance" class="checkbox" />
+                <label for="Clearance">Request IFR/VFR Clearance</label>
+              </li>
+            </ul>
+          </div>
+          <div id="startup" class="checklist">
+            <h3>Start-up</h3>
+            <ul>
+              <li>
+                <input type="checkbox" id="PushStart" class="checkbox" />
+                <label for="PushStart">Request Push & Start</label>
+              </li>
+              <li>
+                <input type="checkbox" id="StartEngines" class="checkbox" />
+                <label for="StartEngines">Start the engines ("E" on PC)</label>
+              </li>
+              <li>
+                <input type="checkbox" id="PushbackSelf" class="checkbox" />
+                <label for="PushbackSelf">Pushback yourself ("P" on PC)</label>
+              </li>
+              <li>
+                <input type="checkbox" id="PushbackTug" class="checkbox" />
+                <label for="PushbackTug"
+                  >OR Wait for a pushback tug (If available)</label
+                >
+              </li>
+            </ul>
+          </div>
+          <div id="after-startup" class="checklist">
+            <h3>After start</h3>
+            <ul>
+              <li>
+                <input type="checkbox" id="EnginesNormal" class="checkbox" />
+                <label for="EnginesNormal"
+                  >Engines normal (Press back "P" on PC)</label
+                >
+              </li>
+              <li>
+                <input type="checkbox" id="FlapsTO" class="checkbox" />
+                <label for="FlapsTO">Flaps set to TO position (Flaps 1)</label>
+              </li>
+            </ul>
+          </div>
+          <div id="beforeTaxi" class="checklist">
+            <h3>Before Taxi</h3>
+            <ul>
+              <li>
+                <input type="checkbox" id="TaxiClearance" class="checkbox" />
+                <label for="TaxiClearance">Request Taxi Clearance</label>
+              </li>
+            </ul>
+          </div>
+          <div id="taxi" class="checklist">
+            <h3>Taxi</h3>
+            <ul>
+              <li>
+                <input type="checkbox" id="TaxiInstructions" class="checkbox" />
+                <label for="TaxiInstructions">Follow Taxi instructions</label>
+              </li>
+            </ul>
+          </div>
+          <div id="afterTaxi" class="checklist">
+            <h3>After Taxi</h3>
+            <ul>
+              <li>
+                <input type="checkbox" id="FreqChangeGround" class="checkbox" />
+                <label for="FreqChangeGround"
+                  >Request Frequency Change (With Ground only)</label
+                >
+              </li>
+              <li>
+                <input type="checkbox" id="ContactTower" class="checkbox" />
+                <label for="ContactTower">Monitor/Contact Tower</label>
+              </li>
+            </ul>
+          </div>
+          <div id="beforeTakeoff" class="checklist">
+            <h3>Before Takeoff</h3>
+            <ul>
+              <li>
+                <input type="checkbox" id="VerifyFlaps" class="checkbox" />
+                <label for="VerifyFlaps">Verify Flaps position</label>
+              </li>
+              <li>
+                <input type="checkbox" id="VerifyCharts" class="checkbox" />
+                <label for="VerifyCharts"
+                  >Verify charts (If using SID and STAR)</label
+                >
+              </li>
+              <li>
+                <input type="checkbox" id="TowerClearance" class="checkbox" />
+                <label for="TowerClearance">Wait for Tower Clearance</label>
+              </li>
+            </ul>
+          </div>
+          <div id="takeoff" class="checklist">
+            <h3>Takeoff</h3>
+            <ul>
+              <li>
+                <input type="checkbox" id="StabilizeEngines" class="checkbox" />
+                <label for="StabilizeEngines">Stabilize engines at 50%</label>
+              </li>
+              <li>
+                <input type="checkbox" id="TOGA" class="checkbox" />
+                <label for="TOGA">TO/GA (100% engine thrust)</label>
+              </li>
+            </ul>
+          </div>
+          <div id="afterTakeoff" class="checklist">
+            <h3>After Takeoff</h3>
+            <ul>
+              <li>
+                <input type="checkbox" id="GearUp" class="checkbox" />
+                <label for="GearUp">Gear up</label>
+              </li>
+              <li>
+                <input type="checkbox" id="FlapsRetract" class="checkbox" />
+                <label for="FlapsRetract">Flaps Retract</label>
+              </li>
+              <li>
+                <input type="checkbox" id="ReduceThrust" class="checkbox" />
+                <label for="ReduceThrust"
+                  >Reduce thrust to remain under 250kts</label
+                >
+              </li>
+              <li>
+                <input type="checkbox" id="FreqTransferCTR" class="checkbox" />
+                <label for="FreqTransferCTR"
+                  >Wait for Frequency transfer to CTR</label
+                >
+              </li>
+            </ul>
+          </div>
+          <div id="climbCruise" class="checklist">
+            <h3>Climb/Cruise</h3>
+            <ul>
+              <li>
+                <input type="checkbox" id="FollowATC" class="checkbox" />
+                <label for="FollowATC">Follow ATC Instructions</label>
+              </li>
+              <li>
+                <input type="checkbox" id="Under250" class="checkbox" />
+                <label for="Under250"
+                  >Remain at or below 250kts (If 3000ft and below)</label
+                >
+              </li>
+            </ul>
+          </div>
+          <div id="beforeLanding" class="checklist">
+            <h3>Before Landing</h3>
+            <ul>
+              <li>
+                <input type="checkbox" id="Flaps1Runway" class="checkbox" />
+                <label for="Flaps1Runway"
+                  >Set Flaps to 1 when lined up with Runway</label
+                >
+              </li>
+              <li>
+                <input type="checkbox" id="Flaps23" class="checkbox" />
+                <label for="Flaps23"
+                  >Set Flaps to 2-3 when Frequency change</label
+                >
+              </li>
+              <li>
+                <input type="checkbox" id="gearDown" class="checkbox" />
+                <label for="gearDown"
+                  >Gear down</label
+                >
+              </li>
+              <li>
+                <input type="checkbox" id="FlapsFull" class="checkbox" />
+                <label for="FlapsFull"
+                  >Set Flaps to Full when Cleared to land</label
+                >
+              </li>
+              <li>
+                <input type="checkbox" id="LandingSpeed" class="checkbox" />
+                <label for="LandingSpeed"
+                  >Reduce speed to landing speed (~ 125kts)</label
+                >
+              </li>
+            </ul>
+          </div>
+          <div id="landing" class="checklist">
+            <h3>Landing</h3>
+            <ul>
+              <li>
+                <input type="checkbox" id="Flare" class="checkbox" />
+                <label for="Flare">Flare when 30ft above ground</label>
+              </li>
+              <li>
+                <input type="checkbox" id="ThrustIdle" class="checkbox" />
+                <label for="ThrustIdle"
+                  >Thrust Idle when 20ft above ground</label
+                >
+              </li>
+            </ul>
+          </div>
+          <div id="afterLanding" class="checklist">
+            <h3>After Landing</h3>
+            <ul>
+              <li>
+                <input type="checkbox" id="Reverser" class="checkbox" />
+                <label for="Reverser">Full reverser until 70kts</label>
+              </li>
+              <li>
+                <input type="checkbox" id="VacateRunway" class="checkbox" />
+                <label for="VacateRunway">Vacate runway</label>
+              </li>
+              <li>
+                <input type="checkbox" id="ResetFlaps" class="checkbox" />
+                <label for="ResetFlaps">Reset flaps positions</label>
+              </li>
+              <li>
+                <input type="checkbox" id="TaxiToGate" class="checkbox" />
+                <label for="TaxiToGate">Follow ATC instructions to Gate</label>
+              </li>
+            </ul>
+          </div>
+          <div id="shutdown" class="checklist">
+            <h3>Shutdown</h3>
+            <ul>
+              <li>
+                <input type="checkbox" id="EnginesOff" class="checkbox" />
+                <label for="EnginesOff">Turn off engines ("E" on PC)</label>
+              </li>
+              <li>
+                <input type="checkbox" id="ThankATC" class="checkbox" />
+                <label for="ThankATC">Thank the ATC</label>
+              </li>
+            </ul>
+          </div>
+          <button type="reset" class="button">Reset checklist</button>
         </div>
-        <div id="startup" class="checklist">
-          <h3>Start-up</h3>
-          <ul>
-            <li><input type="checkbox" id="PushStart" class="checkbox">
-                <label for="PushStart">Request Push & Start</label></li>
-            <li><input type="checkbox" id="StartEngines" class="checkbox">
-                <label for="StartEngines">Start the engines ("E" on PC)</label></li>
-            <li><input type="checkbox" id="PushbackSelf" class="checkbox">
-                <label for="PushbackSelf">Pushback yourself ("P" on PC)</label></li>
-            <li><input type="checkbox" id="PushbackTug" class="checkbox">
-                <label for="PushbackTug">OR Wait for a pushback tug (If available)</label></li>
-          </ul>
-        </div>
-        <div id="after-startup" class="checklist">
-          <h3>After start</h3>
-          <ul>
-            <li><input type="checkbox" id="EnginesNormal" class="checkbox">
-                <label for="EnginesNormal">Engines normal (Press back "P" on PC)</label></li>
-            <li><input type="checkbox" id="FlapsTO" class="checkbox">
-                <label for="FlapsTO">Flaps set to TO position (Flaps 1)</label></li>
-          </ul>
-        </div>
-        <div id="beforeTaxi" class="checklist">
-          <h3>Before Taxi</h3>
-          <ul>
-            <li><input type="checkbox" id="TaxiClearance" class="checkbox">
-                <label for="TaxiClearance">Request Taxi Clearance</label></li>
-          </ul>
-        </div>
-        <div id="taxi" class="checklist">
-          <h3>Taxi</h3>
-          <ul>
-            <li><input type="checkbox" id="TaxiInstructions" class="checkbox">
-                <label for="TaxiInstructions">Follow Taxi instructions</label></li>
-          </ul>
-        </div>
-        <div id="afterTaxi" class="checklist">
-          <h3>After Taxi</h3>
-          <ul>
-            <li><input type="checkbox" id="FreqChangeGround" class="checkbox">
-                <label for="FreqChangeGround">Request Frequency Change (With Ground only)</label></li>
-            <li><input type="checkbox" id="ContactTower" class="checkbox">
-                <label for="ContactTower">Monitor/Contact Tower</label></li>
-          </ul>
-        </div>
-        <div id="beforeTakeoff" class="checklist">
-          <h3>Before Takeoff</h3>
-          <ul>
-            <li><input type="checkbox" id="VerifyFlaps" class="checkbox">
-                <label for="VerifyFlaps">Verify Flaps position</label></li>
-            <li><input type="checkbox" id="VerifyCharts" class="checkbox">
-                <label for="VerifyCharts">Verify charts (If using SID and STAR)</label></li>
-            <li><input type="checkbox" id="TowerClearance" class="checkbox">
-                <label for="TowerClearance">Wait for Tower Clearance</label></li>
-          </ul>
-        </div>
-        <div id="takeoff" class="checklist">
-          <h3>Takeoff</h3>
-          <ul>
-            <li><input type="checkbox" id="StabilizeEngines" class="checkbox">
-                <label for="StabilizeEngines">Stabilize engines at 50%</label></li>
-            <li><input type="checkbox" id="TOGA" class="checkbox">
-                <label for="TOGA">TO/GA (100% engine thrust)</label></li>
-          </ul>
-        </div>
-        <div id="afterTakeoff" class="checklist">
-          <h3>After Takeoff</h3>
-          <ul>
-            <li><input type="checkbox" id="GearUp" class="checkbox">
-                <label for="GearUp">Gear up</label></li>
-            <li><input type="checkbox" id="FlapsRetract" class="checkbox">
-                <label for="FlapsRetract">Flaps Retract</label></li>
-            <li><input type="checkbox" id="ReduceThrust" class="checkbox">
-                <label for="ReduceThrust">Reduce thrust to remain under 250kts</label></li>
-            <li><input type="checkbox" id="FreqTransferCTR" class="checkbox">
-                <label for="FreqTransferCTR">Wait for Frequency transfer to CTR</label></li>
-          </ul>
-        </div>
-        <div id="climbCruise" class="checklist">
-          <h3>Climb/Cruise</h3>
-          <ul>
-            <li><input type="checkbox" id="FollowATC" class="checkbox">
-                <label for="FollowATC">Follow ATC Instructions</label></li>
-            <li><input type="checkbox" id="Under250" class="checkbox">
-                <label for="Under250">Remain at or below 250kts (If 3000ft and below)</label></li>
-          </ul>
-        </div>
-        <div id="beforeLanding" class="checklist">
-          <h3>Before Landing</h3>
-          <ul>
-            <li><input type="checkbox" id="Flaps1Runway" class="checkbox">
-                <label for="Flaps1Runway">Set Flaps to 1 when lined up with Runway</label></li>
-            <li><input type="checkbox" id="Flaps23" class="checkbox">
-                <label for="Flaps23">Set Flaps to 2-3 when Frequency change</label></li>
-            <li><input type="checkbox" id="ApproachSpeed" class="checkbox">
-                <label for="ApproachSpeed">Reduce speed to approach speed (~ 140kts)</label></li>
-            <li><input type="checkbox" id="FlapsFull" class="checkbox">
-                <label for="FlapsFull">Set Flaps to Full when Cleared to land</label></li>
-            <li><input type="checkbox" id="LandingSpeed" class="checkbox">
-                <label for="LandingSpeed">Reduce speed to landing speed (~ 125kts)</label></li>
-          </ul>
-        </div>
-        <div id="landing" class="checklist">
-          <h3>Landing</h3>
-          <ul>
-            <li><input type="checkbox" id="Flare" class="checkbox">
-                <label for="Flare">Flare when 30ft above ground</label></li>
-            <li><input type="checkbox" id="ThrustIdle" class="checkbox">
-                <label for="ThrustIdle">Thrust Idle when 20ft above ground</label></li>
-          </ul>
-        </div>
-        <div id="afterLanding" class="checklist">
-          <h3>After Landing</h3>
-          <ul>
-            <li><input type="checkbox" id="Reverser" class="checkbox">
-                <label for="Reverser">Full reverser until 70kts</label></li>
-            <li><input type="checkbox" id="VacateRunway" class="checkbox">
-                <label for="VacateRunway">Vacate runway</label></li>
-            <li><input type="checkbox" id="ResetFlaps" class="checkbox">
-                <label for="ResetFlaps">Reset flaps positions</label></li>
-            <li><input type="checkbox" id="TaxiToGate" class="checkbox">
-                <label for="TaxiToGate">Follow ATC instructions to Gate</label></li>
-          </ul>
-        </div>
-        <div id="shutdown" class="checklist">
-          <h3>Shutdown</h3>
-          <ul>
-            <li><input type="checkbox" id="EnginesOff" class="checkbox">
-                <label for="EnginesOff">Turn off engines ("E" on PC)</label></li>
-            <li><input type="checkbox" id="ThankATC" class="checkbox">
-                <label for="ThankATC">Thank the ATC</label></li>
-          </ul>
-        </div>
-      </div>
+      </form>
     </main>
     <footer>
       <p class="text">Copyright 2026 Anchor Studio</p>
