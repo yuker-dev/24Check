@@ -1,26 +1,47 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>24Check</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/svg" href="Images/24Check-logo-nobg.svg">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/svg" href="Images/24Check-logo-nobg.svg" />
+  </head>
+  <body>
     <header>
-        <div class="intro">
-            <h1 class="title">24Check</h1>
-            <p class="text">A simple & easy checklist for ATC24 players</p>
-        </div>
+      <div class="intro">
+        <h1 class="title">24Check</h1>
+        <p class="text">A simple & easy checklist for ATC24 players</p>
+      </div>
     </header>
     <main>
-        <div id="before-start">
-
+      <div class="checklists">
+        <div id="startupCheck" class="checklistContainer">
+          <div id="before-start" class="checklist">
+            <h3>Before start</h3>
+          </div>
+          <div id="startup" class="checklist">
+            <h3>Start-up</h3>
+          </div>
+          <div id="after-startup" class="checklist">
+            <h3>After start</h3>
+          </div>
         </div>
+        <div id="taxiCheck" class="checklistContainer">
+            <div id="beforeTaxi" class="checklist">
+                <h3>Before Taxi</h3>
+            </div>
+            <div id="taxi" class="checklist">
+                <h3>Taxi</h3>
+            </div>
+            <div id="afterTaxi" class="checklist">
+                <h3>After Taxi</h3>
+            </div>
+        </div>
+      </div>
     </main>
     <footer>
-        <p class="text">Copyright 2026 Anchor Studio</p>
+      <p class="text">Copyright 2026 Anchor Studio</p>
     </footer>
-</body>
+  </body>
 </html>
