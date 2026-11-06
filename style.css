@@ -3,7 +3,7 @@
 * {
   font-family: "Inter", sans-serif;
   margin: 0px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+
 }
 
 header {
@@ -13,7 +13,7 @@ header {
 }
 
 .intro {
-  padding: 100px;
+  padding: 50px;
 }
 
 header .title {
@@ -28,9 +28,13 @@ header .text {
 }
 
 main {
-  background-color: #639a88;
+  background-color: #031926;
   height: auto;
   padding: 15px;
+}
+
+form {
+    align-items: center;
 }
 
 .checklists {
@@ -57,10 +61,43 @@ main {
   list-style: none;
   color: #fff;
   margin: 10px;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 .checklist li :hover {
   color: #ffec00;
+}
+
+.checkBox {
+    appearance: none;
+    min-width: 15px;
+    height: 15px;
+    border-radius: 5px;
+    background-color: #92b9bd;
+    margin: 0px;
+    transition: background-color 0.2s ease-in-out;
+
+}
+
+.checkBox::before {
+    padding: 10px;
+}
+
+.checkBox:hover {
+    background-color: #ffec00;
+}
+
+.checkBox:checked {
+    background-color: #ffec00;
+}
+
+.resetbtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
 }
 
 .button {
@@ -78,8 +115,8 @@ main {
 }
 
 .button:hover {
-  background-color: #639a88;
-  color: #ffec00;
+  background-color: #92b9bd;
+  color: #031926;
 }
 
 footer {
