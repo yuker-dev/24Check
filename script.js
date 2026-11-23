@@ -27,3 +27,13 @@ let afterLandingCheck = ["Full reverser until 70kts", "Vacate runway", "Reset fl
 let shutdownCheck = ['Turn off engines ("E" on PC)', "Thank the ATC"]
 
 let checklists = [beforeStartCheck, startUpCheck, afterStartCheck, beforeTaxiCheck, taxiCheck, afterTaxiCheck, beforeToCheck, toCheck, afterToCheck, climbCheck, beforeLandingCheck, landingCheck, afterLandingCheck, shutdownCheck]
+
+const container = document.querySelector(".checklists");
+
+function createElement(type, content, parent, x) {
+    const element = document.createElement(`${type}`)
+    element.classList.add(x)
+    element.textContent = `${content}`
+
+    parent.appendChild(element)
+}
