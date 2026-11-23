@@ -181,19 +181,24 @@ function createUl(parent) {
 function createLi(id, content) {
     const li = document.createElement("li")
     
+    const checkbox = document.createElement("input")
+    checkbox.type = "checkbox"
+    checkbox.id = `${id}`
 
+    li.appendChild(checkbox)
+
+    const label = document.createElement("label")
+    label.htmlFor = `${id}`
+    label.textContent = `${content}`
+
+    li.appendChild(label)
 }
 
 function createChecklist(title, elements) {
     const details = createOpenDetails("checklist")
     const summary = createSummary(details, title)
     const ul = createUl(summary)
-
-    for (i = 0; i < elements.lenght; i++) {
-        createLi("idk", elements[i])
-    }
     
-
 }
 function createElement(type, content, parent, x) {
     const element = document.createElement(`${type}`)
