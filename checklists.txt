@@ -1,0 +1,65 @@
+Before start:
+	ATIS Information acknowledged
+	Flight Plan filed
+	Request IFR/VFR Clearance
+	
+Start-up and pushback: 
+	Request Push & Start
+	Start the engines ("E" on PC)
+	Pushback yourself ("P" on PC)
+	OR 
+	Wait for a pushback tug (If available)
+
+After Start-up and Pushback:
+	Engines normal (Press back "P" on PC)
+	Flaps set to TO position (Flaps 1)
+	
+Before Taxi:
+	Request Taxi Clearance
+
+Taxi:
+	Follow Taxi instructions
+
+After Taxi:
+	Request Frequency Change (With Ground only)
+	Monitor/Contact Tower
+
+Before takeoff:
+	Verify Flaps position
+	Verify charts (If using SID and STAR)
+	Wait for Tower Clearance
+
+Takeoff: 
+	Stabilize engines at 50%
+	TO/GA (100% engine thrust)
+
+After Takeoff:
+	Gear up
+	Flaps Retract
+	Reduce thrust to remain under 250kts
+	Wait for Frequency transfer to CTR
+
+Climb/Cruise:
+	Follow ATC Instructions
+	Reman at or bellow 250kts (If 3000ft and below)
+
+Before landing:
+	Set Flaps to 1 when lined up with Runway
+	Set Flaps to 2-3 when Frequency change
+	Reduce speed to approach speed (~ 140kts)
+	Set Flaps to Full when Cleared to land 
+	Reduce speed to landing speed (~ 125kts)
+	
+Landing:
+	Flare when 30fts above ground
+	Thrust Idle when 20fts above ground
+	
+After landing: 
+	Full reverser until 70kts 
+	Vacate runway
+	Reset flaps positions
+	Follow ATC instructions to Gate
+
+Shutdown:
+	Turn off engines ("E" on PC)
+	Thank the ATC
