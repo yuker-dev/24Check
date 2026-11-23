@@ -30,6 +30,62 @@ let checklists = [beforeStartCheck, startUpCheck, afterStartCheck, beforeTaxiChe
 
 const container = document.querySelector(".checklists");
 
+
+{/* <details open class="checklist" class="checklist">
+            <summary>Before start</summary>
+            <ul>
+              <li>
+                <input type="checkbox" id="ATIS" class="checkBox" />
+                <label for="ATIS">ATIS Information acknowledged</label>
+              </li>
+              <li>
+                <input type="checkbox" id="FPL" class="checkBox" />
+                <label for="FPL">Flight Plan filed</label>
+              </li>
+              <li>
+                <input type="checkbox" id="Clearance" class="checkBox" />
+                <label for="Clearance">Request IFR/VFR Clearance</label>
+              </li>
+            </ul>
+          </details> */}
+
+
+function createOpenDetails(x) {
+    const details = document.createElement("details")
+    details.open = true
+    details.classList.add(X)
+}
+
+function createSummary(parent, content) {
+    const summary = document.createElement("summary")
+    summary.textContent = `${content}`
+
+    parent.appendChild(summary)
+}
+
+function createUl(parent) {
+    const ul = document.createElement("ul")
+
+    parent.appendChild(ul)
+}
+
+function createLi(id, content) {
+    const li = document.createElement("li")
+    
+
+}
+
+function createChecklist(title, elements) {
+    const details = createOpenDetails("checklist")
+    const summary = createSummary(details, title)
+    const ul = createUl(summary)
+
+    for (i = 0; i < elements.lenght; i++) {
+        createLi("idk", elements[i])
+    }
+    
+
+}
 function createElement(type, content, parent, x) {
     const element = document.createElement(`${type}`)
     element.classList.add(x)
@@ -37,3 +93,6 @@ function createElement(type, content, parent, x) {
 
     parent.appendChild(element)
 }
+
+
+console.log(beforeLandingCheck[4])
