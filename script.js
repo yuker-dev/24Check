@@ -151,7 +151,7 @@ let checklists = [
 	shutdownCheck,
 ];
 
-	/* <details open class="checklist" class="checklist">
+/* <details open class="checklist" class="checklist">
             <summary>Before start</summary>
             <ul>
               <li>
@@ -176,8 +176,7 @@ function createOpenDetails() {
 	details.open = true;
 	details.classList.add("checklist");
 
-
-    return details
+	return details;
 }
 
 function createSummary(parent, title) {
@@ -186,7 +185,7 @@ function createSummary(parent, title) {
 
 	parent.appendChild(summary);
 
-    return summary
+	return summary;
 }
 
 function createUl(parent) {
@@ -194,7 +193,7 @@ function createUl(parent) {
 
 	parent.appendChild(ul);
 
-    return ul
+	return ul;
 }
 
 function createLi(id, content) {
@@ -203,7 +202,7 @@ function createLi(id, content) {
 	const checkbox = document.createElement("input");
 	checkbox.type = "checkbox";
 	checkbox.id = `${id}`;
-    checkbox.classList.add("checkBox")
+	checkbox.classList.add("checkBox");
 
 	li.appendChild(checkbox);
 
@@ -213,7 +212,7 @@ function createLi(id, content) {
 
 	li.appendChild(label);
 
-    return li
+	return li;
 }
 
 function createChecklist(check, title) {
@@ -226,7 +225,7 @@ function createChecklist(check, title) {
 
 		ul.appendChild(li);
 	}
-    container.appendChild(details)
+	container.appendChild(details);
 }
 
 function createChecklists(check) {
@@ -235,6 +234,6 @@ function createChecklists(check) {
 	}
 }
 
-createChecklists(checklists)
+createChecklists(checklists);
 
-console.log(checklists[3].title)
+console.log(checklists[3].title);

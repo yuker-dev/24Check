@@ -1,152 +1,152 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 * {
-  font-family: "Inter", sans-serif;
-  margin: 0px;
-  background-color: #031926;
+	font-family: "Inter", sans-serif;
+	margin: 0px;
+	background-color: #031926;
 }
 
 :root {
-  interpolate-size: allow-keywords;
+	interpolate-size: allow-keywords;
 }
 
 details::details-content {
-  height: 0;
-  overflow: clip;
-  transition:
-    height 0.3s ease,
-    content-visibility 0.3s ease allow-discrete;
+	height: 0;
+	overflow: clip;
+	transition:
+		height 0.3s ease,
+		content-visibility 0.3s ease allow-discrete;
 }
 
 details[open]::details-content {
-  height: auto;
+	height: auto;
 }
 
 header {
-  text-align: center;
-  margin: 0px;
-  background-color: #031926;
+	text-align: center;
+	margin: 0px;
+	background-color: #031926;
 }
 
 .intro {
-  padding: 50px;
+	padding: 50px;
 }
 
 header .title {
-  font-size: 5rem;
-  margin: 0px;
-  color: #ffec00;
+	font-size: 5rem;
+	margin: 0px;
+	color: #ffec00;
 }
 
 header .text {
-  color: #92b9bd;
-  font-size: 1.2rem;
+	color: #92b9bd;
+	font-size: 1.2rem;
 }
 
 main {
-  background-color: #031926;
-  height: auto;
-  padding: 15px;
+	background-color: #031926;
+	height: auto;
+	padding: 15px;
 }
 
 form {
-  align-items: center;
+	align-items: center;
 }
 
 .checklists {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: center;
 }
 
 .checklist {
-  flex: 0 1 250px;
-  height: auto;
-  border: #92b9bd solid 3px;
-  border-radius: 15%;
-  padding: 10px;
+	flex: 0 1 250px;
+	height: auto;
+	border: #92b9bd solid 3px;
+	border-radius: 15%;
+	padding: 10px;
 }
 
 .checklist summary {
-  list-style: none;
-  text-align: center;
-  margin-top: 10px;
-  color: #ffec00;
-  transition: color 0.3s ease-in-out;
+	list-style: none;
+	text-align: center;
+	margin-top: 10px;
+	color: #ffec00;
+	transition: color 0.3s ease-in-out;
 }
 
 .checklist summary:hover {
-  color: #fff7a0;
+	color: #fff7a0;
 }
 .checklist li {
-  list-style: none;
-  color: #fff;
-  margin: 10px;
-  transition:
-    background-color 0.3s ease,
-    background-color 0.3s ease;
+	list-style: none;
+	color: #fff;
+	margin: 10px;
+	transition:
+		background-color 0.3s ease,
+		background-color 0.3s ease;
 }
 
 .checklist li :hover {
-  color: #ffec00;
+	color: #ffec00;
 }
 
 .checkBox {
-  appearance: none;
-  min-width: 15px;
-  height: 15px;
-  border-radius: 5px;
-  background-color: #92b9bd;
-  margin-right: 5px;
-  transition: background-color 0.2s ease-in-out;
+	appearance: none;
+	min-width: 15px;
+	height: 15px;
+	border-radius: 5px;
+	background-color: #92b9bd;
+	margin-right: 5px;
+	transition: background-color 0.2s ease-in-out;
 }
 
 .checkBox::before {
-  padding: 10px;
+	padding: 10px;
 }
 
 .checkBox:hover {
-  background-color: #ffec00;
+	background-color: #ffec00;
 }
 
 .checkBox:checked {
-  background-color: #ffec00;
+	background-color: #ffec00;
 }
 
 .resetbtn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 10px;
 }
 
 .resetButton {
-  border: solid 2px #92b9bd;
-  margin: 1.5rem;
-  background-color: #031926;
-  color: #92b9bd;
-  font-size: 1.5rem;
-  border-radius: 15px;
-  width: 300px;
-  cursor: pointer;
-  transition:
-    background-color 0.3s ease,
-    color 0.3s ease;
+	border: solid 2px #92b9bd;
+	margin: 1.5rem;
+	background-color: #031926;
+	color: #92b9bd;
+	font-size: 1.5rem;
+	border-radius: 15px;
+	width: 300px;
+	cursor: pointer;
+	transition:
+		background-color 0.3s ease,
+		color 0.3s ease;
 }
 
 .resetButton:hover {
-  background-color: #92b9bd;
-  color: #031926;
+	background-color: #92b9bd;
+	color: #031926;
 }
 
 footer {
-  max-height: auto;
-  background-color: #031926;
-  text-align: center;
-  color: #92b9bd;
+	max-height: auto;
+	background-color: #031926;
+	text-align: center;
+	color: #92b9bd;
 }
 
 footer .text {
-  padding: 50px;
+	padding: 50px;
 }
