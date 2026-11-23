@@ -7,7 +7,7 @@ let beforeStartCheck = {
     ]
 }
 
-let startUpcCheck = {
+let startUpCheck = {
     title: "Start-Up",
     items: [
         {id: "pushStart", text: "Request Push & Start"},
@@ -194,17 +194,23 @@ function createLi(id, content) {
     li.appendChild(label)
 }
 
-function createChecklist(title, elements) {
+function createChecklist(check, title) {
     const details = createOpenDetails("checklist")
     const summary = createSummary(details, title)
     const ul = createUl(summary)
-    
-}
-function createElement(type, content, parent, x) {
-    const element = document.createElement(`${type}`)
-    element.classList.add(x)
-    element.textContent = `${content}`
 
-    parent.appendChild(element)
+    for (let i = 0; i < check.items.lenght; i++) {
+        let li = createLi(check.items[i].id, check.items[i].text)
+
+        ul.appendChild(li)
+    }
+
 }
 
+function createChecklists(check) {
+    for (let i = 0; i < check.lenght; i++) {
+        createChecklist(check[i], check[i].title)
+    }
+}
+
+// createChecklists(checklists)
