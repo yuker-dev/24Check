@@ -217,5 +217,3 @@ function createChecklists(check) {
 }
 
 createChecklists(checklists);
-
-console.log(checklists[3].title);
