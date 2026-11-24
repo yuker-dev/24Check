@@ -151,24 +151,6 @@ let checklists = [
 	shutdownCheck,
 ];
 
-/* <details open class="checklist" class="checklist">
-            <summary>Before start</summary>
-            <ul>
-              <li>
-                <input type="checkbox" id="ATIS" class="checkBox" />
-                <label for="ATIS">ATIS Information acknowledged</label>
-              </li>
-              <li>
-                <input type="checkbox" id="FPL" class="checkBox" />
-                <label for="FPL">Flight Plan filed</label>
-              </li>
-              <li>
-                <input type="checkbox" id="Clearance" class="checkBox" />
-                <label for="Clearance">Request IFR/VFR Clearance</label>
-              </li>
-            </ul>
-          </details> */
-
 const container = document.querySelector(".checklists");
 
 function createOpenDetails() {
