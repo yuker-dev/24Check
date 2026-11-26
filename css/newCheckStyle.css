@@ -34,8 +34,9 @@ main {
 }
 
 .checklist {
+    margin-top: 50px;
     width: 700px;
-    height: 400px;
+    min-height: 450px;
     border: solid #27272a 4px;
     border-radius: 20%;
     background-color: #062f47;
@@ -43,4 +44,67 @@ main {
 
 .checklist h2 {
     text-align: center;
+    font-size: 2rem;
+    color: #ffec00;
+}
+
+.checkbox {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    border-radius: 90px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.side {
+    margin: 20px;
+}
+
+.leftSide {
+    justify-content: start;
+}
+
+.leftSide button {
+    background-color: #062f47;
+    border: solid #92b9bd 3px;
+    color: #92b9bd;
+}
+
+.leftSide button:hover {
+    background-color: #92b9bd;
+    color: #062f47;
+}
+
+.rightSide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: end;
+}
+
+.rightSide button {
+    background-color: #3a4a54;
+    color: #8a9aa3;
+    border: none;
+}
+
+.rightSide a {
+    color: #92b9bd;
+}
+
+.rightSide button:hover {
+    background-color: #ffec00;
+    color: #062f47;
 }
