@@ -1,4 +1,4 @@
-* {
+body {
 	font-family: "Inter", sans-serif;
 	margin: 0px;
 	background-color: #031926;
@@ -8,7 +8,6 @@
 header {
 	text-align: center;
 	margin: 0px;
-	background-color: #031926;
 }
 
 .intro {
@@ -26,3 +25,22 @@ header .text {
 	font-size: 1.2rem;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.checklist {
+    width: 700px;
+    height: 400px;
+    border: solid #27272a 4px;
+    border-radius: 20%;
+    background-color: #062f47;
+}
+
+.checklist h2 {
+    text-align: center;
+}
