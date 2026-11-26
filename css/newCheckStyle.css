@@ -1,0 +1,28 @@
+* {
+	font-family: "Inter", sans-serif;
+	margin: 0px;
+	background-color: #031926;
+    color: #fff;
+}
+
+header {
+	text-align: center;
+	margin: 0px;
+	background-color: #031926;
+}
+
+.intro {
+	padding: 50px;
+}
+
+header .title {
+	font-size: 5rem;
+	margin: 0px;
+	color: #ffec00;
+}
+
+header .text {
+	color: #92b9bd;
+	font-size: 1.2rem;
+}
+
